@@ -84,6 +84,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  transition: ;
 }
 .link-header:focus,
 .link-header:hover {
@@ -105,6 +106,7 @@ img {
   color: #434455;
   font-style: normal;
   padding: 24px 0;
+  transition: ;
 }
 .link-address:focus,
 .link-address:hover {
@@ -152,6 +154,7 @@ img {
   height: 56px;
   min-width: 169px;
   margin: 0 auto;
+  transition: ;
 }
 
 .hero-btn:focus,
@@ -183,6 +186,18 @@ img {
 .features-item {
   max-width: 264px;
   width: calc((100%-72) / 4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+.features-item-icon {
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  max-width: 264px;
+  padding: 24px 100px;
 }
 .features-title {
   font-weight: 500;
@@ -217,7 +232,7 @@ img {
   margin-bottom: 72px;
 }
 .team-list {
-  background-color: #ffffff;
+  background-color: #f4f4fd;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -237,8 +252,10 @@ img {
 }
 .team-item {
   background-color: #fff;
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-text {
   font-weight: 400;
@@ -247,6 +264,17 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
+}
+.team-social-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.team-social-icon {
+  fill: #f4f4fd;
+  border-radius: 50%;
 }
 /* #endregion Team */
 /* #region Portfolio */
@@ -303,9 +331,23 @@ img {
   background: #2e2f42;
   padding: 100px 0;
 }
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+.footer-logo-content {
+  margin-right: 120px;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
 }
 .logo-footer {
   font-weight: 700;
@@ -324,5 +366,15 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.footer-social-link {
+}
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
 /* #endregion Footer */
